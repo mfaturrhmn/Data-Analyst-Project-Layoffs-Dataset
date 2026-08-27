@@ -1,4 +1,4 @@
-# 🧠 Project: Layoffs Dataset Data Cleaning and Exploratory Data for Data Analytics
+# 🧠 Project: Layoffs Dataset Data Cleaning for Data Analytics
 
 
 ## 📋 Overview
