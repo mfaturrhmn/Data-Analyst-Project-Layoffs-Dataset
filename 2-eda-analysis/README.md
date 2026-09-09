@@ -23,6 +23,8 @@ SELECT * FROM layoffs_staging2
 WHERE percentage_laid_off = 1
 ORDER BY funds_raised_millions DESC;
 ```
+Penjelasan:
+
 ### 4
 ```SQL
 SELECT company, SUM(total_laid_off)
