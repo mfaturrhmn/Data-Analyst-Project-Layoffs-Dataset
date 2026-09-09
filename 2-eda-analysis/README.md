@@ -73,7 +73,7 @@ WHERE SUBSTRING(`date`, 1, 7) IS NOT NULL
 GROUP BY `MONTH`
 ORDER BY 1 ASC;
 ```
-### 11 Tren PHK Bulanan (Time Series)
+### 11 Akumulasi Krisis dengan Rolling Total
 ```SQL
 WITH Rolling_Total AS
 (
