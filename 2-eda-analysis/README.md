@@ -12,6 +12,8 @@ Proyek komprehensif ini bertujuan untuk membersihkan dataset `layoffs.csv` dan m
 SELECT * 
 FROM layoffs_staging2;
 ```
+![image alt](https://github.com/mfaturrhmn/Data-Analyst-Project-Layoffs-Dataset/blob/03ae7b0ae1c2d02a7f01179a04e5311fda3f5952/2-eda-analysis/image/Query%201%20Melihat%20Keseluruhan%20Data%20Mentah.png)
+
 ### 2. Skala Maksimum Krisis PHK
 ```SQL
 SELECT MAX(total_laid_off), MAX(percentage_laid_off) 
