@@ -1,8 +1,7 @@
 # 📈 Project: Exploratory Data Analysis (EDA)
 
 ## 📋 Overview
-Proyek komprehensif ini bertujuan untuk membersihkan dataset `layoffs.csv` dan mengeksplorasi tren pemutusan hubungan kerja (layoffs) secara global menggunakan **MySQL 8**. Proyek ini dibagi menjadi dua tahap utama: **Data Cleaning** dan **Exploratory Data Analysis (EDA)**.
-
+Proyek ini bertujuan untuk menganalisis tren Pemutusan Hubungan Kerja (PHK) global secara masif yang terjadi di berbagai perusahaan dunia menggunakan MySQL. Analisis ini dirancang untuk menggali data mentah, membersihkannya, dan menjawab berbagai pertanyaan bisnis krusial guna memahami pola krisis ekonomi di sektor teknologi dan korporasi.
 ---
 
 ## 🛠️ 1. Data Preparation & Sanity Check
