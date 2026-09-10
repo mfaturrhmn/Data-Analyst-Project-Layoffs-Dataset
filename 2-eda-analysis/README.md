@@ -35,6 +35,7 @@ Penjelasan: Menganalisis perusahaan mana saja yang melakukan PHK 100% karyawanny
 ![image alt](https://github.com/mfaturrhmn/Data-Analyst-Project-Layoffs-Dataset/blob/aa5547a9c1af0e29b60223da175eb100780e6b8b/2-eda-analysis/image/Query%203%20Perusahaan%20yang%20Tutup%20Total%20(100%25%20Layoffs)%20dengan%20Pendanaan%20Terbesar.png)
 
 ## 🌍 2. Macro Analysis: Tren Berdasarkan Perusahaan, Negara, dan Waktu
+
 ### 4. Total PHK Berdasarkan Perusahaan (Top 10)
 ```SQL
 SELECT company, SUM(total_laid_off)
@@ -99,6 +100,7 @@ Penjelasan: Melihat rata-rata skala gelombang PHK yang dilakukan oleh suatu peru
 ![image alt](https://github.com/mfaturrhmn/Data-Analyst-Project-Layoffs-Dataset/blob/aa5547a9c1af0e29b60223da175eb100780e6b8b/2-eda-analysis/image/Query%209%20Rata-rata%20Jumlah%20PHK%20per%20Perusahaan.png)
 
 ## 📈 3. Advanced Analysis: Tren Bulanan & Ranking (Window Functions & CTEs)
+
 ### 10. Tren PHK Bulanan (Time Series)
 ```SQL
 SELECT SUBSTRING(`date`, 1, 7) AS `MONTH`, SUM(total_laid_off)
@@ -157,6 +159,8 @@ WHERE Ranking <= 5;
 ```
 Penjelasan: Menggunakan kombinasi CTE dan Window Function DENSE_RANK() OVER (PARTITION BY ...) untuk menyaring dan memunculkan 5 besar perusahaan penyumbang PHK tertinggi di setiap tahunnya secara otomatis.
 ![image alt](https://github.com/mfaturrhmn/Data-Analyst-Project-Layoffs-Dataset/blob/aa5547a9c1af0e29b60223da175eb100780e6b8b/2-eda-analysis/image/Query%2013%20Top%205%20Perusahaan%20dengan%20PHK%20Terbanyak%20Setiap%20Tahun%20(DENSE_RANK).png)
+
 Insight: Peta perusahaan paling agresif melakukan efisiensi bergeser dari tahun ke tahun: dipimpin oleh Bytedance pada 2021, beralih ke Meta di 2022, hingga Google dan Microsoft yang mendominasi daftar teratas pada awal 2023.
 
-
+## 4. 💡 Conclusion
+Analisis menggunakan MySQL ini membuktikan bahwa gelombang PHK global massal didorong oleh koreksi besar-besaran di sektor teknologi pasca-pandemi, di mana perusahaan-perusahaan besar (Post-IPO) dan berbasis di Amerika Serikat menjadi yang paling signifikan terdampak secara akumulatif. Penggunaan Window Functions dan CTE berhasil memetakan eskalasi krisis ini secara kronologis dan terstruktur.
